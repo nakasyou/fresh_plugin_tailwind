@@ -1,5 +1,9 @@
 # fresh_plugin_tailwind
 Raw TailwindCSS on Fresh
+
+- Demo: http://fresh-plugin-tailwind.deno.dev
+- deno.land/x: https://deno.land/x/fresh_plugin_tailwind
+- GitHub: https://github.com/nakasyou/fresh_plugin_tailwind
 ## What's this?
 TailwindCSS was not previously available in Deno. Now that `npm:` import is supported, it can be used, but not with Deno Deploy. Therefore, Fresh uses Twind instead of TailwindCSS.
 However, I was recently informed that `npm:` import is now available in Deno Deploy!
