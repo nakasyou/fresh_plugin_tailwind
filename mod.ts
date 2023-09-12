@@ -10,7 +10,7 @@ export default function pluginTailwind (): Plugin {
     name: 'tailwind',
     async renderAsync(ctx) {
       await ctx.renderAsync()
-      const cssText = makecss()
+      const cssText = await makecss()
       return {
         styles: [{ cssText, id: 'fresh_tailwind_style' }],
       };
