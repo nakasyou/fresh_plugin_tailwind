@@ -5,10 +5,11 @@ import tailwindcss from 'npm:tailwindcss'
 
 const makecss = async () => (await postcss([tailwindcss]).process('@tailwind base; @tailwind components; @tailwind utilities;')).css
 
-export default function pluginTailwind (): Plugin{
+export default function pluginTailwind (): Plugin {
   return {
     name: 'tailwind',
     async renderAsync(ctx) {
+      await ctx.renderAsync()
       const cssText = makecss()
       return [{
         cssText,
