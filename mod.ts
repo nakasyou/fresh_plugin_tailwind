@@ -12,10 +12,8 @@ export default function pluginTailwind (): Plugin {
       await ctx.renderAsync()
       const cssText = makecss()
       return {
-        styles: [{
-          cssText,
-        }]
-      }
+        styles: [{ cssText, id: 'fresh_tailwind_style' }],
+      };
     },
   }
 }
